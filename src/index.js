@@ -5,8 +5,7 @@ const PORT = 4000;
 
 app.use(express.json());
 
-require("./controllers/authController")(app);
-require("./controllers/projectController")(app);
+require("./controllers/index")(app);
 
 
 app.listen(PORT, () => console.log(`Server Running on port: http://localhost:${PORT}`))
